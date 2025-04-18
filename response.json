@@ -1,0 +1,73 @@
+{
+  "messages": [
+    {
+      "id": "c4968401-04ed-427a-8555-a236742395f9",
+      "content": "Tên của tôi là gì?",
+      "additional_kwargs": {},
+      "response_metadata": {}
+    },
+    {
+      "id": "run-6011a0f8-520a-4b74-8c41-4441a8f10321-0",
+      "content": "",
+      "additional_kwargs": {
+        "function_call": {
+          "name": "my_name",
+          "arguments": "{}"
+        }
+      },
+      "response_metadata": {
+        "prompt_feedback": {
+          "block_reason": 0,
+          "safety_ratings": []
+        },
+        "finish_reason": "STOP",
+        "model_name": "gemini-1.5-flash",
+        "safety_ratings": []
+      },
+      "tool_calls": [
+        {
+          "name": "my_name",
+          "args": {},
+          "id": "19367b05-d282-4022-a492-65e4399a0a17",
+          "type": "tool_call"
+        }
+      ],
+      "usage_metadata": {
+        "input_tokens": 66,
+        "output_tokens": 3,
+        "total_tokens": 69,
+        "input_token_details": {
+          "cache_read": 0
+        }
+      }
+    },
+    {
+      "id": "1f0d146d-312a-43e8-8402-e8ecd1a8b2a2",
+      "name": "my_name",
+      "tool_call_id": "19367b05-d282-4022-a492-65e4399a0a17",
+      "content": "Minh Nguyen - Nax"
+    },
+    {
+      "id": "run-934be0dd-49ba-4832-971e-aaec4d30911e-0",
+      "content": "Tên của bạn là Minh Nguyen - Nax.",
+      "additional_kwargs": {},
+      "response_metadata": {
+        "prompt_feedback": {
+          "block_reason": 0,
+          "safety_ratings": []
+        },
+        "finish_reason": "STOP",
+        "model_name": "gemini-1.5-flash",
+        "safety_ratings": []
+      },
+      "usage_metadata": {
+        "input_tokens": 77,
+        "output_tokens": 10,
+        "total_tokens": 87,
+        "input_token_details": {
+          "cache_read": 0
+        }
+      }
+    }
+  ]
+}
